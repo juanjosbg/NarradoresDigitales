@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+/* https://fonts.google.com/specimen/Open+Sans?query=sans */
+
+:root {
+  --primary-color: gray;
+  --secondary-color: rgb(192, 4, 4);
+  --extra-color: white;
+
+  --blue1:#20ced3;
+  --blue2:#a5eaef;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.o-header {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.o-header-buttons {
+  background-color: var(--secondary-color);
+  border: 0px;
+  border-radius: 10px;
+  color: var(--extra-color);
+  font-size: 1rem;
+  padding: 0.7rem;
+  margin: 0.2rem;
+}
+
+button {
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+  .o-header-buttons {
+      font-size: 2rem;
+      padding: 1rem;
+      margin: 1rem 1rem;
+  }
+}
+/* ------------------------------------- */
+/* nav */
+.navcont {
+  background:#fff;
+  box-shadow: 0px 24px 9px -17px rgb(0 0 0 / 30%);
+  margin-bottom: 30px;
+}
+.navbar{
+  padding: 1rem 3rem;
+}
+.navbar-collapse{
+  padding: 7px 0;
+}
+.nav-rule{
+  padding: 0 0 3px;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+  color: #fff;
+  font-weight: 300;
+  padding: 0 0.8rem;
+  
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover{
+  color: rgb(190, 190, 190);
+  font-weight: 400;
+  padding: 0 0.9rem;
+}
+#navbarSupportedContent > button{
+  background: rgb(0, 0, 0);
+  font-weight: 600;
+  padding: 0.4rem 1.4rem;
+  border-radius: 30px;
+}
+/* img index */
+.img-index{
+  width: 100%;
+  object-fit: cover;
+  background-size:cover ;
+  height: auto;
+}
+/* footer */
+.cont-rule{
+  background: linear-gradient(50deg, #7a7a7a, #919191);
+  color: #fff;
+}
+.border-bottom {
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 0 !important;
+  border-bottom: 1px solid #dee2e6!important;
+  margin-top: -40px;
+}
+.cont-privacity{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  -ms-flex-align: center;
+}
+
+.cont-privacity p{
+  max-width: 600px;
+  line-height: 28px;
+  font-size: 16px;
+  margin-bottom: 40px;
+  margin-top: -20px;
+  margin-left: 100px;
+  color: rgb(199, 199, 199);
+  font-weight: 400;
+}
+.footer--btn{
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  -ms-flex-align: center;
+}
+.footer--btn p{
+  align-items: flex-start!important;
+  color: #fff;
+  font-size: 14px;
+  line-height: 3px;
+  padding: 9px 0;
+}
+/* --------------------------------- */
+/*  index html */
+
+/* VideoRecorder */
+#recorder-container {
+  display:flex;
+  margin-top: 1.5rem;
+}
+
+#canvas-container {
+  margin: auto;
+  border-radius: 30px;
+}
+
+.o-controller {
+  /* background:linear-gradient(50deg, #a0d1ff, #25aff7); */
+  margin: auto;
+  margin-top: 1.5rem;
+  text-align: center;
+  width: 80%;
+}
+
+#record, #stop, #pause {
+  margin: 0px 20px;
+  color: #000;
+}
+
+.o-grid-container {
+  display: grid;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr;
+  grid-template-areas: 
+   "conta1 conta2 conta3"
+   "conta4 conta5 conta6"
+   "conta7 conta8 conta9";
+   grid-gap: 0.7rem;
+  margin-top: 1.5rem;
+
+}
+
+.conta1 {
+  background-image: url('../assets/Escenarios/Parque.jpg');
+  background-size: cover;
+  font-weight: bold;
+  /* border: 10px solid red; */
+}
+
+.btn-style{
+  border-radius: 20px;
+  border: 2px solid grey;
+  -webkit-box-shadow: 1px 4px 8px 0px rgba(0,0,0,0.4); 
+  box-shadow: 1px 4px 8px 0px rgba(0,0,0,0.4);
+  transition: transform .2s;
+}
+
+.btn-style:hover{
+  -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, -8px 6px 8px 4px rgba(0,0,0,0); 
+  box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, -8px 6px 8px 4px rgba(0,0,0,0);
+  transform: scale(1.1);
+}
+
+.conta2 {
+  background-image: url('../assets/Escenarios/Casa.jpg');
+  background-size: cover;
+  font-weight: bold;
+}
+
+.conta3 {
+  background-image: url('../assets/Escenarios/Carro.jpg');
+  background-size: cover;
+  font-weight: bold;
+}
+
+.conta4 {
+  background-image: url('../assets/Personajes/Human/HMM.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  font-weight: bold;
+}
+
+.conta5 {
+  background-image: url('../assets/Personajes/Human/HFF.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  font-weight: bold;
+}
+
+.conta6 {
+  background-image: url('../assets/Personajes/Human/HFM.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  font-weight: bold;
+}
+
+.conta7 {
+   background-image: url('../assets/Personajes/Human/HM.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  font-weight: bold;
+}
+
+.conta8 {
+   background-image: url('../assets/Personajes/Animal/AP.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  font-weight: bold;
+
+}
+
+.conta9 {
+   background-image: url('../assets/Personajes/Animal/AR.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  font-weight: bold;
+}
+
+.conta1, .conta2, .conta3, .conta4, .conta5, .conta6, .conta7, .conta8, .conta9 {
+  height: 20vh;
+  width: 100%;
+}
+
+.o-title {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/* btn e icon */
+.icon{
+  font-size: 25px;
+  padding-left: 10px;
+}
+.button-infoc{
+  display: block;
+  background: linear-gradient(50deg, #7a7a7a, #919191);
+  padding: 10px 20px;
+  text-align: center;
+  margin: auto;
+  color: #fff !important;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  transition: all 300ms;
+  display: inline-block;
+}
+.button-infoc:hover{
+  transform: translateY(10px);
+  box-shadow: 0px 30px 5px -15px rgba(0, 0, 0, 0.3);
+}
+
+.buttona:hover{
+  background: linear-gradient(50deg, #4b9dc4, #154961);
+  transform: translateY(10px);
+}
+.buttonb:hover{
+  background: linear-gradient(50deg, #fae396, #b1922c);
+  transform: translateY(10px);
+  margin-bottom: none;
+}
+.buttonc:hover{
+  background: linear-gradient(50deg, #921717, #5f0707);
+  transform: translateY(10px);
+}
+/* Footer */
+#foot{
+  margin-top: 20px;
+}
+
+.o-img-main {
+  width: 100%;
+  height: auto;
+}
+
+.o-img {
+  width:100%;
+  height: auto;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "narradores-digitales",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GregoryInnovo/Narradores-digitales.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "serialport": "^9.0.7",
+    "socket.io": "^4.0.2",
+    "socket.io-client": "^4.0.2"
+  },
+  "bugs": {
+    "url": "https://github.com/GregoryInnovo/Narradores-digitales/issues"
+  },
+  "homepage": "https://github.com/GregoryInnovo/Narradores-digitales#readme"
+}
